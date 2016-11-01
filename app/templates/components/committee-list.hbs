@@ -1,0 +1,15 @@
+<select onchange={{action "selectChamber" value="target.value"}}>
+  <option value="house">House
+  </option>
+  <option value="senate">Senate
+  </option>
+  <option value="joint">Joint
+  </option>
+</select>
+<u></u>
+{{#each list as |committee|}}
+<ul>
+  <li {{action "showSubcommittees" committee}}>{{committee.name}}</li>
+</ul>
+
+{{/each}}

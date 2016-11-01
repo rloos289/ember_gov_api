@@ -1,0 +1,8 @@
+{{#if list}}
+  <h2><u>Subcommittees</u></h2> 
+{{/if}}
+{{#each list as |committee|}}
+  <ul>
+    <li>{{committee.name}}</li>
+  </ul>
+{{/each}}
